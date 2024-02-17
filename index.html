@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad Educativa Nacional Hermano Juan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icono.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- MENU DE NAVEGACION -->
+    <nav class="navbar">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="" id="logos">
+        </a>
+        <ul>
+            <li><a href="resena.html">Reseña Histórica</a></li>
+            <li><a href="ofertas.html">Ofertas Académicas</a></li>
+            <li><a href="horarios.html">Horarios</a></li>
+            <li><a href="#ubicacion">Contacto</a></li>
+            <li><a href="manual.html">Manual de Uso</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+        </ul>
+    </nav>
+
+<!-- TITULO -->
+
+    <div class="int">
+        <div>
+            <h1 id="int-1">
+                UNIDAD EDUCATIVA NACIONAL<br> HERMANO JUAN
+            </h1>
+        </div>
+    </div>
+
+    <div class="slider-container">
+        <h1>Nuestra Institución</h1>
+        <div class="slide">
+            <div class="slide-inner">
+                <input class="slide-open" type="radio" id="slide-1" 
+                      name="slide" aria-hidden="true" hidden="" checked="checked">
+                <div class="slide-item">
+                    <img src="img/unidad2.webp">
+                </div>
+                <input class="slide-open" type="radio" id="slide-2" 
+                      name="slide" aria-hidden="true" hidden="">
+                <div class="slide-item">
+                    <img src="img/unidad3.webp">
+                </div>
+                <input class="slide-open" type="radio" id="slide-3" 
+                      name="slide" aria-hidden="true" hidden="">
+                <div class="slide-item">
+                    <img src="img/carrusel.jpg">
+                </div>
+                <label for="slide-3" class="slide-control prev control-1">‹</label>
+                <label for="slide-2" class="slide-control next control-1">›</label>
+                <label for="slide-1" class="slide-control prev control-2">‹</label>
+                <label for="slide-3" class="slide-control next control-2">›</label>
+                <label for="slide-2" class="slide-control prev control-3">‹</label>
+                <label for="slide-1" class="slide-control next control-3">›</label>
+            </div>
+        </div>
+    </div>
+
+<!-- RESENA HISTORICA -->
+<!--
+<div class="contenedor-acordeon" id="resena">
+    <h2>Reseña Histórica</h2>
+    <div class="contenedor-acordeon">
+        <details for="btn-acordeon1">
+            <summary class="acordeon">Comienzo</summary>
+            <div class="acordeon__contenido">
+                <p>El Ciclo Básico Común Hermano Juan fue creado según la gaceta oficial N°30.065, el 15 de marzo de 1973, esta institución nace con el propósito de cubrir la necesidad matricular que existía en la comunidad de Pueblo Nuevo zona oeste de Barquisimeto y sectores aledaños, ya que para la época estas zonas carecían de instituciones de educación media que atendieran a la población estudiantil que egresaba de educación primaria.<br><br>
+                Esta institución inicia sus actividades escolares en el año 1972, en la sede del Colegio Pre-Artesanal Hermano Juan ubicado al final de la avenida Corpahuaico con la avenida la Salle sector Pueblo Nuevo de Barquisimeto con una matrícula de 536 estudiantes distribuidos en 10 secciones de primer año, bajo la dirección del Hermano Roberto Bonilla, una secretaria Eyilda Manzanilla y Omaira Díaz como obrera, junto a ellos un grupo de docentes integrados por Giménez Marlene (Castellano), Álvarez Magaly (Matemática), Orellana Leopoldina (Ciencias Sociales), Quintero Esteban (Biología), Domínguez José (Ingles), Acosta Bronny (Ciencias Sociales), Giménez Omar – Luisa Colmenarez (Educación Física), Fabricio Miguel (Dibujo), y Ledesma Elis (Madera).
+                <br><br>El Ciclo Básico Común Hermano Juan comienza a funcionar en horas de la mañana como institución educativa, constituida por dos (12) ambientes de clases y tres (03) talleres para el área de exploración de trabajos manuales.
+                </p>
+            </div>
+        </details>
+        <details for="btn-acordeon1">
+            <summary class="acordeon">Décadas</summary>
+            <div class="acordeon__contenido">
+                <p>Entre los años 1973-1976 se crean los años escolares en prosecución y secciones de primero, segundo y tercer año, llegando alcanzar una matrícula para el año 1976 de ochocientos cuarenta y seis (846) estudiantes, lo cual refleja un aumento significativo, y a su vez, genera el ingreso de nuevo personal de docente, administrativo y obrero dando entrada a los siguientes profesores Vilma Lima (Castellano), González Alirio (Matemática), William Piña (Ciencias Sociales), Ledesma Elis (Madera), Soldevilla José (Dibujo), Silva Milagros (Hogar), Acosta Álvaro (Castellano), Rojas María – Valdés Miguel  - Gonzales Otomano (Matemática), Luz Serrano (Física), Reyes Eli (Química).
+                <br><br>Para el año 1980, bajo la dirección del profesor Gerardo Oviedo tras una ardua lucha de la comunidad docente – Estudiantes, comienza la construcción de la nueva sede del Ciclo Básico Común Hermano Juan y es hasta enero de 1983, bajo el mandato presidencial de Luis Herrera Campins, se inaugura la nueva edificación de la institución y traslado de la misma, ubicada en la calle 3 entre carreras 5 y 6 del sector Pueblo Nuevo Barquisimeto, hecho que permitió un mejor desarrollo en las actividades escolares, contando con mayor espacio físico la creación automática del Ciclo Diversificado y el aumento acelerado de la matricula estudiantil. <br><br> A través del tiempo, el plantel fue proyectándose como una de las instituciones educativas con mayor fortaleza desde el punto de vista geográfico, y con mayor matricula entre los liceos de la zona oeste de la ciudad; entre los años escolares 2004-2005 la matricula alcanzo una cantidad de mil ochocientos treinta y ocho (1838) estudiantes distribuidos en 42 secciones atendidos en los turnos de mañana y tarde con un personal conformado por 85 profesores.
+                </p>
+        </div>
+        </details>
+            <details for="btn-acordeon1">
+                <summary class="acordeon">Actualidad</summary>
+                <div class="acordeon__contenido">
+                    <p>Cabe destacar que el Ciclo Básico Común Hermano Juan ha tenido una gran trayectoria a través del tiempo, se ha preocupado por mantener y fortalecer ese potencial de los estudiantes y su comunidad es por ellos que, ha preparado en la formación académica a generaciones bajo perspectiva integral de desarrollo, económico, social y cultural. Esta institución marco una gran relevancia en la zona oeste de la ciudad de Barquisimeto, cumpliendo su labor comprometida en la educación de generaciones que han proyectado a dicha institución a través de sus profesionales.
+                    </p>
+                </div>
+            </details>
+        </div> 
+    </div>
+-->
+    <!-- OFERTA ACADEMICA -->
+<!--
+    <div class="oferta" id="ofertas">
+        <h1>Ofertas Académicas</h1>      
+    </div>
+    <div class="container-card">
+        <div class="card">
+            <figure class="figure">
+                <img src="img/liceo1.webp">
+            </figure>
+            <div class="contenido-card">
+                <h3>Primer Año</h3>
+                <p>Los estudiantes aprenden sobre una variedad de materias, incluyendo matemáticas, ciencias, humanidades y ciencias sociales.</p><br>
+                
+            </div>
+            <br>
+        </div>
+        <div class="card">
+            <figure class="figure">
+                <img src="img/liceo2.webp">
+            </figure>
+            <div class="contenido-card">
+                <h3>Segundo Año</h3>
+                <p>Es un momento para que los estudiantes profundicen en sus conocimientos y habilidades, y para que comiencen a pensar en sus carreras futuras.</p><br>
+            </div>
+            <br>
+        </div>
+        <div class="card">
+            <figure class="figure">
+                <img src="img/liceo3.webp">
+            </figure>
+            <div class="contenido-card">
+                <h3>Tercer Año</h3>
+                <p>es un período importante para el desarrollo académico y personal de los estudiantes. Comienzan a ver materias nuevas para ellos como fisica,quimica y siguen obteniendo conocimientos</p>
+            </div>
+            <br>
+        </div>
+        <div class="card">
+            <figure class="figure">
+                <img src="img/liceo4.webp">
+            </figure>
+            <div class="contenido-card contenido-card--width">
+                <h3>Cuarto Año</h3>
+                <p>Los estudiantes generalmente toman clases de matemáticas, ciencias, humanidades, ciencias sociales. Son más avanzadas a las que tomaron en años anteriores.</p><br>
+            </div>
+            <br>
+        </div>
+        <div class="card">
+            <figure class="figure">
+                <img src="img/liceo5.webp">
+            </figure>
+            <div class="contenido-card">
+                <h3>Quinto Año</h3>
+                <p>Es un período de preparación para la universidad o la fuerza laboral. Los estudiantes toman clases avanzadas en sus areas y también comienzan a tomar clases para su carrera elegida.</p><br>
+            </div>
+            <br>
+        </div>
+    </div>
+
+  
+    
+
+    <!-- HORARIOS -->
+ <!--   
+    <div class="titulo-horario" id="horarios">
+        <h1>Horarios de Clase:</h1>
+    </div>
+    <div class="container-horario">
+        <div class="primero">
+            <div class="boton-modal">
+                <label for="btn-modal">
+                    <a href="horario1ero.html">Primer Año</a>
+                </label>
+            </div>
+            <input type="checkbox" id="btn-modal" >
+        </div>
+
+        <div class="segundo">
+            <div class="boton-modal">
+                <label for="btn-modal">
+                    <a href="horario2do.html">Segundo Año</a>
+                </label>
+            </div>
+            <input type="checkbox" id="btn-modal" >
+        </div>
+
+        <div class="tercer">
+            <div class="boton-modal">
+                <label for="btn-modal">
+                    <a href="horario3ro.html">Tercer Año</a>
+                </label>
+            </div>
+            <input type="checkbox" id="btn-modal" >
+        </div>
+
+        <div class="cuarto">
+            <div class="boton-modal">
+                <label for="btn-modal">
+                    <a href="horario4to.html">Cuarto Año</a>
+                </label>
+            </div>
+            <input type="checkbox" id="btn-modal" >
+        </div>
+
+        <div class="quinto">
+            <div class="boton-modal">
+                <label for="btn-modal">
+                    <a href="horario5to.html">Quinto Año</a>
+                </label>
+            </div>
+            <input type="checkbox" id="btn-modal" >
+        </div>
+    </div>
+    
+--> 
+    <!-- DIRECTIVOS -->
+
+    <div class="int-contamos">
+        <h1>CONTAMOS CON:</h1>
+    </div>
+    <div class="container-directivos">
+        <ul>
+            <br>
+            <li>Mas de 60 Docentes</li>
+            <br>
+            <li>Mas de 15 Obreros</li>
+            <br>
+            <li>Mas de 1000 estudiantes</li>
+            <br>
+            <li>Diverso personal administrativo</li>
+            <br>
+            <li>y Diversas área de Formación y Recreación Académica</li>
+        </ul>
+    </div>
+
+    <!-- UBICACION -->
+
+    <div class="container-ubi">
+        <h1>CONTACTO</h1>
+        <h1 class="tlf" id="ubicacion">Teléfono: </h1>
+        <p>
+            <a href="tel:0251-8088851">- 0251-8088851</a>
+            <br>
+            <br>
+            <a href="tel:+58 416-5559260">- +58 416-5559260</a>     
+        </p>
+        <h1 class="email">E-mail: </h1>
+        <p>
+            <a href="mailto:u.e.n.hermanojuan@hotmail.com">- u.e.n.hermanojuan@hotmail.com</a>
+        </p>
+        <h1 class="ubicacion" id="ubicacion">Ubicacion</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15714.036488810041!2d-69.3652618!3d10.0573043!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8766bde1fb24db%3A0xa1ccd65ff44a615d!2sLiceo%20Hermano%20Juan!5e0!3m2!1ses-419!2sve!4v1706110818836!5m2!1ses-419!2sve" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>
+            - Calle 3 entre carreras 5 y 6 del sector Pueblo Nuevo Barquisimeto
+        </p>
+        <h1 class="codigop">Código Plantel: </h1>
+        <p>
+            - 007913695
+        </p>
+    </div>
+    
+    <div class="container-copy">
+        <h1>© Copyright 2024 | Chacón Juan | Escalona Angélica | Fonseca Diego | González Anthoan | Rodriguez Anyeliz | Todos los derechos reservados.</h1>
+    </div>
+
+</body>
+</html>

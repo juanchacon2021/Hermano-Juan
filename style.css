@@ -1,0 +1,776 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/*HEADER*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+  
+.navbar {
+    position: fixed;
+    background: #233142b6;
+    height: auto;
+    width: 100%;
+    z-index: 10;
+    padding: 1em 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbar ul{
+    float: right;
+}
+.navbar ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+.navbar ul li a{
+    color: #fff;
+    font-size: 15px;
+    padding: 7px 0px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+/*
+.header {
+    position: fixed;
+    width: 100%;
+    padding: 2em 2em;
+    background-color: #233142b6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    z-index: 10;
+}
+*/
+.logo img {
+    height: 4em;
+}
+
+.logo img:hover {
+    transform: scale(1.2);
+    transition: .3s;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 1.3em;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar ul li a::before {
+    content:  '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .5s;
+    color: #fff;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+    color: #fff;
+}
+
+/*PRIMERA SECCION*/
+
+.int {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-top: 20%;
+    padding-bottom: 10%;
+    background: url('img/unidad1.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+#int-1 {
+    font-size: 3em;
+    color: white;
+    font-weight: 900;
+    font-family: 'Raleway',sans-serif;
+}
+
+/*RESENA HISTORICA*/
+
+.contenedor-acordeon{
+    width: 80%;
+    margin: auto;
+    margin-top: 10%;
+    background-color: white;
+    margin-bottom: 10%;
+    font-family: 'Raleway', sans-serif;
+}
+.contenedor-acordeon h2{
+    text-align: center;
+    font-size: 5em;
+    margin-bottom: 35px;
+    font-weight: 900;
+}
+.acordeon{
+    background: #fff;
+    margin: 1em;
+}
+
+details {
+    animation-duration: inherit;
+}
+
+summary{
+    list-style-type: none;
+    transition-duration: 1s;
+}
+.acordeon{
+    padding: 20px;
+    font-size: 2.2em;
+    background: #4F9DA6;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 2px;
+    text-align: center;
+    font-weight: 900;
+    list-style-type: none;
+    border-radius: 100px;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.acordeon:hover{
+    background: #0f2629;
+}
+.acordeon__contenido{
+    width: 95%; 
+    margin: 0 auto;   
+}
+.acordeon__contenido p{
+    font-size: 1.5em; 
+    text-align: justify; 
+}
+.contenido-acordeon{
+    padding: 0px;
+    margin: 0px 20px;
+    max-height: 0px;
+}
+.btn-acordeon:checked ~ .contenido-acordeon{
+    max-height: 60em;
+    padding: 15px 0px;
+}
+.btn-acordeon:checked ~ .contenido-acordeon{
+    display: block;
+}
+.btn-acordeon{
+    display: none;
+}
+
+/* OFERTA ACADEMICA*/
+
+.oferta h1{
+    text-align: center;
+    font-size: 4em;
+    font-family: 'Raleway', sans-serif;
+    background-color: #EC5858;
+    color: white;
+    padding: 7%;
+}
+
+.container-card{
+	width: 100%;
+	display: flex;
+    background-color: #EC5858;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 8%;
+}
+.title-cards{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 20px;
+	margin-top: 20px;
+	text-align: center;
+	color: #7a7a7a;
+}
+
+.contenido-card p{
+    text-align: justify;
+}
+
+.card{
+	width: 100%;
+	margin: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+	background:#fff;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+    padding-bottom: 5px;
+}
+.imagen--width{
+    height: 50%;
+}
+.container-card--width{
+    height: 50%;
+}
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+.card img{
+	width: 100%;
+	height: 50%;
+}
+.card .contenido-card{
+	padding: 15px;
+	text-align: center;
+}
+.card .contenido-card h3{
+	margin-bottom: 15px;
+	color: #7a7a7a;
+}
+.card .contenido-card p{
+	line-height: 1.8;
+	color: #6a6a6a;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.card .contenido-card a{
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: #EC5858;
+	border: 1px solid #EC5858;
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+
+}
+.card a{
+    display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: #EC5858;
+	border: 1px solid #EC5858;
+	border-radius: 4px;
+	transition: all 400ms ease;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 1%
+    
+}
+.figure img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.card .contenido-card a:hover{
+	background: #EC5858;
+	color: #fff;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+	.container-card{
+		flex-wrap: wrap;
+	}
+	.card{
+		margin: 15px;
+	}
+}
+
+
+/* CARRUSEL-SLIDER*/
+
+.slider-container {
+    background-color: #93ABD3;
+}
+
+.slider-container h1{
+    text-align: center;
+    font-size: 3.5em;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    padding-top: 7%;
+    padding-bottom: 3%;
+}
+
+.slide {
+    position: relative;
+    margin-top: 26px;
+}
+
+.slide-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    
+}
+
+.slide-open:checked + .slide-item {
+    position: static;
+    opacity: 100;
+}
+
+.slide-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.slide-item img {
+    display: block;
+    width: 100%;
+}
+
+.slide-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 3.5%;
+    z-index: 10;
+}
+
+.slide-control.prev {
+    left: 2%;
+}
+
+.slide-control.next {
+    right: 2%;
+}
+
+.slide-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-3:checked ~ .control-3 {
+    display: block;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px){
+	.container-card{
+		flex-wrap: wrap;
+	}
+	.card{
+		margin: 15px;
+	}
+}
+
+
+/* HORARIOS */
+
+
+.titulo-horario h1 {
+    font-family: 'Raleway',sans-serif;
+    font-size: 5em;
+    font-weight: 900;
+    text-align: left;
+    background-color: #93ABD3;
+    color: white;
+    padding-top: 10%;
+    padding-bottom: 0;
+    padding-left: 10%;
+}
+
+.container-horario {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    background-color: #93ABD3;
+    padding: 5% 5%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.boton-modal{
+    background-color: #23314291;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    font-weight: 900;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.boton-modal:hover{
+    background-color: #000a16;
+}
+
+.boton-modal label a {
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+}
+
+#btn-modal{
+    display: none;
+}
+
+/* PERSONAL */
+
+.container-directivos {
+    background-color: #C1224F;    
+    font-family: 'Raleway',sans-serif;
+    display: flex;
+    padding: 0% 0% 7% 10%;
+}
+
+.int-contamos h1{
+    background-color: #C1224F;   
+    font-family: 'Raleway',sans-serif;
+    font-size: 5em;
+    padding: 5% 2% 0% 10%;
+}
+
+.container-directivos ul li {
+    margin-top: 5%;
+    font-size: 1.5em;
+}
+
+.container-directivos .container-img img {
+    width: 20em;
+    height: 15em;
+    margin-left: 40%;
+    border-radius: 20px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.493);
+}
+
+/* UBICACION */
+
+
+.container-ubi {
+    font-family: 'Raleway', sans-serif;
+    padding-left: 10%;
+    color: rgb(22, 22, 22);
+    background-color: #EFE891;
+    margin: 0;
+    height: 1230px;
+    padding-top: 3.5%;
+}
+
+.container-ubi iframe {
+    width: 80%;
+    height: auto;
+}
+
+.container-ubi h1 {
+    font-size: 5em;
+    padding-bottom: 2%;
+    padding-bottom: 10%;
+}
+
+.container-ubi .ubicacion{
+    font-size: 2.5em;
+    font-weight: 900;
+    padding-bottom: 0.5em;
+}
+
+.container-ubi p {
+    padding-top: 3%;
+    padding-bottom: 1em;
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+.container-ubi p a {
+    padding-bottom: 1em;
+    font-size: 1em;
+    text-decoration: none;
+    color: rgb(22, 22, 22);
+}
+
+.container-ubi .tlf {
+    font-size: 2.5em;
+    font-weight: 900;
+    padding-bottom: 0.5em;
+}
+
+.container-ubi .email {
+    font-size: 2.5em;
+    font-weight: 900;
+    padding-bottom: 0.5em;
+}
+
+.container-ubi .codigop {
+    font-size: 2.5em;
+    font-weight: 900;
+    padding-bottom: 0.5em;
+}
+
+/* COPYRIGHT */
+
+.container-copy {
+    width: 100%;
+    background-color: #7c1a1a;
+    color: white;
+    font-family: 'Raleway',sans-serif;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-copy h1{
+    text-align: center;
+    width: 80%;
+    font-weight: 500;
+}
+
+/* ANIMACIONES */
+
+#int-1 {
+    animation-duration: 1s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+
+  /* RESPONSIVE */
+
+@media (max-width: 1098px){
+    .navbar{
+        background-color: #233142b6;
+        height: 11%;
+    }
+    .checkbtn{
+        display: block;
+    }
+    .navbar ul{
+        position: fixed;
+        width: 100%;
+        background: #233142b6;
+        top: 4.5em;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .navbar ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    .navbar ul li a{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    .logo img{
+        margin-top: 5%;
+        width: 3em;
+        height: auto;
+    }
+/* TITULO */
+    .int {
+        padding-top: 6em;
+    }
+
+    #int-1 {
+        font-size: 1.5em;
+    }
+
+/* RESENA HISTORICA */
+
+    .contenedor-acordeon h2{
+        font-size: 2.5em;
+    }
+
+    .acordeon{
+        font-size: 1em;
+        border-radius: 50px;
+        height: 1.5em;
+    }
+
+    .acordeon__contenido p{
+        font-size: 1em;  
+        text-align: justify;
+    }
+
+/* OFERTAS ACADEMICAS */
+
+    .oferta h1{
+        font-size: 2em;
+    }
+
+/* NUESTRA INSTITUCION */
+
+    .slide-control {
+        width: 30px;
+    }
+
+    .slider-container h1{
+        font-size: 2.2em;
+    }
+
+/* HORARIOS */
+
+    .titulo-horario h1 {
+        font-size: 2.3em;
+    }
+
+    .container-horario {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .boton-modal{
+        border-radius: 4px;
+        padding: 20px;
+    }
+    .boton-modal:hover{
+        background-color: #000a16;
+    }
+
+    .boton-modal label a {
+        font-size: 20px;
+    }
+
+    #btn-modal{
+        display: none;
+    }
+
+/* DIRECTIVOS */
+
+    .int-contamos h1{
+        font-size: 2.3em;
+    }
+
+    .container-directivos ul li {
+        margin-top: 5%;
+        font-size:0.8em;
+    }
+
+/* UBICACION */
+
+    .container-ubi {
+        font-family: 'Raleway', sans-serif;
+        padding: 5%;
+        color: rgb(22, 22, 22);
+        background-color: #EFE891;
+        margin: 0;
+        height: 55em;
+    }
+
+    .container-ubi h1{
+        font-size: 2.3em;
+    }
+
+    .container-ubi .ubicacion{
+        font-size: 2em;
+        font-weight: 900;
+        padding-bottom: 0.5em;
+    }
+
+    .container-ubi p {
+        padding-bottom: 1em;
+        font-size: 1.5em;
+        font-weight: 100;
+    }
+
+    .container-ubi p a {
+        padding-bottom: 1em;
+        font-size: 0.8em;
+        text-decoration: none;
+        color: rgb(22, 22, 22);
+    }
+
+    .container-ubi .tlf {
+        font-size: 2em;
+        font-weight: 900;
+        padding-bottom: 0.5em;
+    }
+
+    .container-ubi .email {
+        font-size: 2em;
+        font-weight: 900;
+        padding-bottom: 0.5em;
+    }
+
+    .container-ubi .codigop {
+        font-size: 2em;
+        font-weight: 900;
+        padding-bottom: 0.5em;
+    }
+
+    /* COPYRIGHT */
+
+    .container-copy {
+        padding: 1%;
+    }
+
+    .container-copy h1{
+        font-size: 1em;
+        text-align: center;
+        width: 80%;
+        font-weight: 500;
+    }
+}
